@@ -5,23 +5,20 @@
 \newcommand{\workingDate}{\textsc{@year $|$ @MONTH $|$ @dday}}
 
 % Name and institution must preceed call to researchdiary.sty package
-\newcommand{\userName}{Mikhail Klassen}
-\newcommand{\institution}{McMaster University}
+\newcommand{\userName}{Tommaso Bambagiotti}
+\newcommand{\institution}{}
 
 % The guts and glory
-\usepackage{research_diary}
+\usepackage{../research_diary}
 
 % Begin document.
 % Use \logoPNG or \logoEPS. If compiling with PDFTeX, use \logoPNG
 \begin{document}
-\logoPNG
 
-{\Huge @MONTH @day}
-
-\section*{ }
-
-
-
-
+\input{@NUM_beg_report.tex}
+\clearpage
+\input{@NUM_mid_report.tex}
+\clearpage
+\input{@NUM_end_report.tex}
 
 \end{document}
